@@ -1,0 +1,23 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #e0d7db;
+}
+
+.spacer {
+  height: 100px;
+}
+
+.button-primary {
+  background: #AF7E94;
+  border: none;
+  color: white;
+}
+
+.button-primary:hover {
+  background: #a86784;
+  font-weight: bold;
+  color: white;
+}

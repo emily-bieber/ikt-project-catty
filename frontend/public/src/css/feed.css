@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: #e0d7db;
+}
+
+.button-primary {
+  background: #AF7E94;
+  border: none;
+  color: white;
+}
+
+.button-primary:hover {
+  background: #a86784;
+  font-weight: bold;
+  color: white;
+}
+
+#create-post {
+  z-index: 1001;
+  position: fixed;
+  width: 100%;
+  min-height: calc(100vh - 76px);
+  overflow-y: scroll;
+  bottom: 0;
+  top: 76px;
+  transform: translateY(100vH);
+  transition: transform 0.3s;
+  background: #e0d7db;
+}
+
+#create-post video,
+#create-post canvas {
+  width: 512px;
+  max-width: 100%;
+  display: none;
+  margin: auto;
+}
+
+#create-post #capture-btn {
+  margin: 10px auto;
+}
+
+#create-post input {
+  width: 500px;
+}
+
+.floating-button {
+  z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 30px;
+}
+
+.spacer {
+  height: 100px;
+}
+
+.card {
+  border: none;
+  width: 350px;
+  min-height: 400px;
+}
+
+.card-img-top {
+  width: 100%;
+}
+
+#shared-moments {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  row-gap: 56px;
+}
+
+.date {
+  text-align: right;
+  opacity: 0.4;
+  font-size: 14px;
+}
+
+#confirmation-toast {
+  z-index: 1000;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  background: #AF7E94;
+  color: white;
+  border: 1px solid #a86784;
+}
+
+@media screen and (max-width: 450px) {
+  #create-post input {
+    max-width: 90vw;
+  }
+
+  #shared-moments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: center;
+  }
+}
