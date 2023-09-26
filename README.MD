@@ -1,53 +1,29 @@
-# Progressive Web Apps - Aktuelle Trends der IKT 2022
+# CATTY - Eine PWA zum Anschauen und Teilen von süßen Katzenfotos
 
-Dieses Projekt enthält das Grundgerüst einer Webanwendung. Auf diesem Grundgerüst bauen wir auf und fügen sukzessive *progressive* Funktionalitäten hinzu, so dass am Ende eine *Progressive Web Application* entsteht. 
+Dieses Projekt ist im Rahmen der Lehrveranstaltung "Aktuelle Trends der Informations- und Kommunikationstechnik" entstanden.
+
+
+## Über die Anwendung
+
+Catty ist eine Progressive Webapp (PWA) zum Teilen und Anschauen von süßen Katzenbildern.
+![Screenshot landing page](https://github.com/emily-bieber/ikt-project-catty/assets/83169734/e90cc743-5044-47bd-880f-244ef3532122)
+
+Catty kann installiert werden!
+![Screenshot installierbar](https://github.com/emily-bieber/ikt-project-catty/assets/83169734/7cf21868-ee06-4d0a-849e-9b6aac90535e)
+
+Auf dem Feed gibt es einen Plus-Button, mit dem ein neuer Post verfasst werden kann.
+![Screenshot feed](https://github.com/emily-bieber/ikt-project-catty/assets/83169734/2513d8ed-a1b9-4416-937a-63b8ea81d043)
+
+Wenn ein neuer Post verfasst wird, muss ein Foto gemacht, oder aus den lokalen Dateien ausgesucht werden und ein Titel vergeben werden. Ein kurzer zusätzlicher Text ist optional.
+![Screenshot post verfassen](https://github.com/emily-bieber/ikt-project-catty/assets/83169734/89983a6e-d67a-4348-90d5-f350f83ed373)
+
 
 ## Installation
 
-- Zum Ausführen des Projektes wird [Node.js](https://nodejs.org) verendet. Sie müssen es auf Ihren Rechner installieren. 
+- Zum Ausführen des Projektes wird [Node.js](https://nodejs.org) verwendet.
 
-- In der Wahl Ihrer IDE sind Sie völlig frei. Empfehlungen finden Sie unter [https://freiheit.f4.htw-berlin.de/ikt/tools/#integrated-development-environment-ide](https://freiheit.f4.htw-berlin.de/ikt/tools/#integrated-development-environment-ide)
+- Zum Starten des Projektes `npm install` im Projektordner ausführen,
 
-- Zum Starten des Projektes wechseln Sie im Terminal (Terminal Ihres Rechners oder das Terminal in der IDE) in den Projektordner (`cd IKT-PWA-01`) und führen dort 
-
-	`npm install` 
-
-	aus (es genügt auch `npm i`). Damit werden alle erforderlichen Abhängigkeiten installiert. Es entsteht der `node_modules`-Ordner. 
-
-- Nach erfolgreicher Installation der Abhängigkeiten, geben Sie  
-
-	`npm start` 
-
-	ein, um Ihr Projekt auszuführen (Es wird der `http-server` mit der Option `-c-1` gestartet. Diese Option disabled Caching). Klicken Sie danach auf [localhost:8080](http://localhost:8080) oder geben Sie die URL direkt in Ihren Browser ein.
-
-- Sollten Sie Änderungen an der IMplementierung vornehmen und diese ausprobieren wollen, müssen Sie den Server zunächst wieder stoppen:
-
-	`Ctrl-C`
-
-	und geben dann erneut 
-
-	`npm start` 
-
-	ein. 
-
-## Anpassungen
-
-Wir verwenden [Material Design Lite](https://getmdl.io/) für das Design unserer Anwendung. Sie können natürlich auch andere CSS-Frameworks verwenden. Sollte Ihnen die aktuelle Farbkombination aus `blue-grey` und `red` nicht zusagen, können Sie in den `index.html`-Datein (im `public`- und im `public/help`-Ordner auch eine andere Kombination auswählen (siehe
-
-`href="https://code.getmdl.io/1.3.0/material.blue_grey-red.min.css"`
-
-Andere Farbkombinationen finden Sie [hier](https://getmdl.io/customize/#cdn-code). Es genügt auch, die entsprechenden Farben in den Dateinamen einzutragen 
-
-`material.{primary}-{accent}.min.css` 
-
-(z.B. `material.indigo-pink.min.css`).
-
---
-
-Sie können natürlich auch ein anderes Bild als das HTW-Bild einbinden. Beachten Sie dabei nur, dass wir mithilfe responsiven Verhaltens drei verschiedene Bilder davon benötigen, idealerweise mit den Pixel-Maßen `1200 x 457` (`*-lg.jpg`), `900 x 343` (`*.jpg`) und `480 x 183` (`*-sm.jpg`). Siehe dann die `public/index.html`.
-
---
-
-Binden Sie ruhig Ihr eigenes `favicon.ico` in den Projektordner ein. Erstellen können Sie sich ein solches `favicon` z.B. [hier](https://favicon.io/) oder [hier](https://www.ionos.de/tools/favicon-generator). Macht Spaß und gibt allen Ihren Webanwendungen eine persönliche Note ;-).
+- dann mit `npm start` ausführen
 
  
